@@ -1,0 +1,141 @@
+/* Reset General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo general */
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: black;
+    padding: 10px;
+}
+
+/* Navegación */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: blue;
+    border-radius: 5px;
+}
+
+/* Contenido del encabezado */
+.header-content {
+    color: #333;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Sección de misión */
+.mision {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    border: 2px solid blue;
+    background-color: beige;
+    gap: 100px;
+}
+
+.mision-texto {
+    flex: 5;
+    max-width: 30%;
+    border: 2px solid green;
+    margin-left: 400px;
+    position: static;
+}
+
+.mision-imagen img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid red;
+    position: static;
+}
+
+/* Títulos de la misión */
+.mision-texto h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Contenedor principal */
+/* Contenedor principal */
+.contenedor-padre {
+    border: 2PX solid blue;
+    display: flex; /* Flexbox para organizar los hijos */
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    background-color: darkseagreen;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: 50px; /* Asegura que el contenedor capture sus hijos */
+}
+
+/* Contenedor de la imagen */
+.imagen-contenedor2 {
+    max-width: 500px; /* Limita el ancho máximo del contenedor de la imagen */
+    width: 100%; /* Ajusta al tamaño del contenedor padre */
+    border: 2px solid black; /* Añade un borde para visualizar los límites */
+    max-width: 300px; /* Ajusta el ancho máximo */
+    height: auto; /* Mantén la proporción */
+    border-radius: 10px; /* Si quieres bordes redondeados */
+    display: block; /* Elimina espacios blancos alrededor */
+}
+
+/* Imagen dentro del contenedor */
+.imagen-contenedor2 img {
+    max-width: 100%; /* La imagen no excede el tamaño del contenedor */
+    height: auto; /* Mantén la proporción de la imagen */
+    display: block; /* Elimina espacios blancos alrededor de la imagen */
+}
+
+/* Contenedor de texto */
+.contenedor-texto {
+    max-width: 600px; /* Limita el tamaño del texto */
+    border: 3px solid blueviolet;
+    border-radius: 5px;
+    padding: 15px; /* Espacio interno */
+    background-color: white;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor-padre {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        gap: 20px; /* Reduce el espacio entre elementos */
+    }
+
+    .imagen-contenedor2 {
+        max-width: 90%; /* Ajusta el ancho en pantallas pequeñas */
+    }
+
+    .contenedor-texto {
+        max-width: 90%; /* Ajusta el ancho del texto */
+    }
+}
